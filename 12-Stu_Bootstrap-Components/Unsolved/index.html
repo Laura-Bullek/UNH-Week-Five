@@ -14,36 +14,88 @@
 
   <!-- Add a navbar here -->
   <!-- https://getbootstrap.com/docs/4.5/components/navbar/ -->
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- create page margins -->
   <main class="container-fluid my-3">
     <!-- Add a jumbotron here -->
     <!-- https://getbootstrap.com/docs/4.5/components/jumbotron/ -->
-
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
     <hr />
 
     <!-- Add a dismissible alert here -->
     <!-- https://getbootstrap.com/docs/4.5/components/alerts/ -->
-
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+      <hr>
+      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
     <hr />
 
     <h2>Fill Out This Form!</h2>
     <!-- Add a form here -->
     <!-- https://getbootstrap.com/docs/4.5/components/forms/ -->
-
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Example file input</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    </form>
     <hr />
 
     <h2>Check Out This List!</h2>
     <!-- Add a list with badges here -->
     <!-- https://getbootstrap.com/docs/4.5/components/list-group -->
-
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+        Cras justo odio
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+      <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+      <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+      <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+    </div>
     <hr />
 
     <h2>Check Out This Card!</h2>
     <!-- Add a card with a header, list, and footer here  -->
     <!-- https://getbootstrap.com/docs/4.5/components/card/ -->
-
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
   </main>
 
 </body>
